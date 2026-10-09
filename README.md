@@ -1,6 +1,6 @@
 ## Start with Codex
 
-Clone the template, or update an existing local copy:
+Copy this prompt to start with Codex:
 
 ```sh
 git clone https://github.com/artiehinz/ats-cv.git
@@ -10,13 +10,21 @@ cd ats-cv
 Read `AGENTS.md`, `REVIEW.md`, and `.agents/skills/rebuild-cv/SKILL.md` first. Run `uv sync`, `uv run python -m unittest discover -s tests -v`, `uv run python scripts/cv.py build --variant motion`, and `uv run python scripts/cv.py build --variant master`. Inspect every QA PNG plus `report.json`, `extracted.txt`, and `extracted-layout.txt`. I will provide and confirm facts, and approve changes. Use local source evidence only; never invent facts. Use variants for tailoring, preserve private inputs, and do not publish or submit anything without my explicit permission. Treat `source/` and `old_cv/` as local private inputs: keep their contents out of Git except their README files.
 ```
 
-If this template helps, consider starring the [GitHub repository](https://github.com/artiehinz/ats-cv).
+# Convert an old CV into an ATS-friendly resume with Codex
 
-# Local RenderCV resume template
+Place an old CV locally, let Codex read it as evidence, and convert
+owner-verified facts into structured YAML. RenderCV then produces a modern,
+ATS-friendly PDF, while local checks and page previews support review. The
+workflow does not promise universal ATS compatibility or automatic factual
+correctness.
 
-A file-based, privacy-conscious resume template built around RenderCV 2.8.
-It keeps editable content, focused variants, design settings, tests, and local
-PDF checks together without requiring a hosted resume service.
+## How it works
+
+1. Put the original CV in `old_cv/` or `source/`; both are private and ignored.
+2. Start Codex with the prompt above.
+3. Provide or confirm facts and resolve questions before changes are approved.
+4. Codex updates the master inventory and optional job-specific variants.
+5. Build the PDF and inspect its QA report, extracted text, and previews before use.
 
 ## Privacy
 
