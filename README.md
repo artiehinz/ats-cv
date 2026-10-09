@@ -5,13 +5,10 @@ Clone the template, or update an existing local copy:
 ```sh
 git clone https://github.com/artiehinz/ats-cv.git
 cd ats-cv
-# Existing copy only:
-git pull --ff-only
+# For an existing local copy instead: git pull --ff-only
+
+Read `AGENTS.md`, `REVIEW.md`, and `.agents/skills/rebuild-cv/SKILL.md` first. Run `uv sync`, `uv run python -m unittest discover -s tests -v`, `uv run python scripts/cv.py build --variant motion`, and `uv run python scripts/cv.py build --variant master`. Inspect every QA PNG plus `report.json`, `extracted.txt`, and `extracted-layout.txt`. I will provide and confirm facts, and approve changes. Use local source evidence only; never invent facts. Use variants for tailoring, preserve private inputs, and do not publish or submit anything without my explicit permission. Treat `source/` and `old_cv/` as local private inputs: keep their contents out of Git except their README files.
 ```
-
-Paste this into Codex:
-
-> Read `AGENTS.md`, `REVIEW.md`, and `.agents/skills/rebuild-cv/SKILL.md` first. Run `uv sync`, `uv run python -m unittest discover -s tests -v`, `uv run python scripts/cv.py build --variant motion`, and `uv run python scripts/cv.py build --variant master`. Inspect every QA PNG plus `report.json`, `extracted.txt`, and `extracted-layout.txt`. I will provide and confirm facts, and approve changes. Use local source evidence only; never invent facts. Use variants for tailoring, preserve private inputs, and do not publish or submit anything without my explicit permission. Treat `source/` and `old_cv/` as local private inputs: keep their contents out of Git except their README files.
 
 If this template helps, consider starring the [GitHub repository](https://github.com/artiehinz/ats-cv).
 
