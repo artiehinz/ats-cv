@@ -1,0 +1,14 @@
+# Full-content rendering; preserves original section sequence.
+description: Full source inventory. Not the submission-length target.
+max_pages: 4
+section_order:
+- Summary
+- Core Skills
+- Software
+- Professional Experience
+- Selected Projects
+- AI & Pipeline Contributions
+- Awards & Recognition
+- Work Authorization & Preferences
+- Education
+- Languages

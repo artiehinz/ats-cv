@@ -1,0 +1,22 @@
+# Local, private source resumes used as conversion input.
+old_cv/*
+!old_cv/README.md
+
+# Local testing data.
+old_cv/Artie_Hinz_Senior-3D_Motion Designer_CV.pdf
+
+# Retained local starter duplicate; the root project is the maintained copy.
+Artie_Hinz_Local_CV_Starter/
+
+# Private evidence preserved from the starter CV; keep it local, including the
+# retained unpacked starter copy.
+**/source/original.pdf
+**/source/original.txt
+
+# Local environments and generated build output.
+.venv/
+__pycache__/
+*.pyc
+out/
+.env
+.env.*

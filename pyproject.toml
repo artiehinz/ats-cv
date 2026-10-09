@@ -1,0 +1,13 @@
+[project]
+name = "artie-cv-local"
+version = "0.1.0"
+description = "Local, Codex-editable CV sources and PDF checks"
+requires-python = ">=3.12"
+dependencies = [
+  "rendercv[full]==2.8",
+  "PyYAML==6.0.3",
+  "PyMuPDF==1.26.7",
+]
+
+[tool.uv]
+package = false

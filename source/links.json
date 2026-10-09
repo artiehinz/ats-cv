@@ -1,0 +1,156 @@
+[
+  {
+    "page": 1,
+    "label": "hello@artiehinz.com",
+    "uri": "mailto:hello@artiehinz.com",
+    "rectangle": [
+      279.72509765625,
+      64.302978515625,
+      361.3974609375,
+      74.652099609375
+    ]
+  },
+  {
+    "page": 1,
+    "label": "artiehinz.com",
+    "uri": "https://artiehinz.com/",
+    "rectangle": [
+      373.7373046875,
+      64.302978515625,
+      427.25830078125,
+      74.652099609375
+    ]
+  },
+  {
+    "page": 1,
+    "label": "LinkedIn",
+    "uri": "https://www.linkedin.com/in/artie-hinz/",
+    "rectangle": [
+      437.09765625,
+      64.302978515625,
+      471.12451171875,
+      74.652099609375
+    ]
+  },
+  {
+    "page": 1,
+    "label": "GitHub",
+    "uri": "https://github.com/artiehinz",
+    "rectangle": [
+      480.9638671875,
+      64.302978515625,
+      508.974609375,
+      74.652099609375
+    ]
+  },
+  {
+    "page": 1,
+    "label": "Portfolio",
+    "uri": "https://artiehinz.com/all",
+    "rectangle": [
+      155.53125,
+      214.462646484375,
+      191.0478515625,
+      224.811767578125
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Squid Game in Calgary",
+    "uri": "https://artiehinz.com/squid-game-in-calgary",
+    "rectangle": [
+      108.0,
+      219.962646484375,
+      201.04541015625,
+      230.311767578125
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Google ARCore",
+    "uri": "https://artiehinz.com/arcore",
+    "rectangle": [
+      108.0,
+      231.8641357421875,
+      174.0322265625,
+      242.2132568359375
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Co-op Holiday Campaign",
+    "uri": "https://artiehinz.com/coop-holiday-campaign",
+    "rectangle": [
+      108.0,
+      243.765625,
+      208.55126953125,
+      254.11474609375
+    ]
+  },
+  {
+    "page": 2,
+    "label": "RIMOWA: Reflects Vibrance",
+    "uri": "https://artiehinz.com/rimowa-reflects-vibrance",
+    "rectangle": [
+      108.0,
+      255.6671142578125,
+      221.03173828125,
+      266.0162353515625
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Ciiiiiiiiiiigarette",
+    "uri": "https://artiehinz.com/ciiiiiiiiiiigarette",
+    "rectangle": [
+      108.0,
+      267.568603515625,
+      164.513671875,
+      277.917724609375
+    ]
+  },
+  {
+    "page": 2,
+    "label": "R&D collection",
+    "uri": "https://artiehinz.com/research-development",
+    "rectangle": [
+      108.0,
+      279.4700927734375,
+      167.02294921875,
+      289.8192138671875
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Webby Award Winner – Sotbi",
+    "uri": "https://winners.webbyawards.com/2019/websites/general-websites/law/88227/sotbi",
+    "rectangle": [
+      108.0,
+      451.7745361328125,
+      225.22412109375,
+      462.1236572265625
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Behance Motion Design Award & 3D Design Awards",
+    "uri": "https://www.behance.net/artie_hinz",
+    "rectangle": [
+      108.0,
+      463.676025390625,
+      316.77978515625,
+      474.025146484375
+    ]
+  },
+  {
+    "page": 2,
+    "label": "goEast Film Festival – Open Frame Award for “Aftermath VR”.",
+    "uri": "https://medium.com/vr-film-review/open-frame-award-goeast-film-festival-2019-8710ed7300fc",
+    "rectangle": [
+      108.0,
+      475.5775146484375,
+      355.412109375,
+      485.9266357421875
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+# Proposed style; validate the locally rendered PDF before submission.
+# Dates remain in the same textual column as the employer and role.
+design:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.6in
+    bottom_margin: 0.7in
+    left_margin: 0.72in
+    right_margin: 0.72in
+    show_footer: false
+    show_top_note: false
+  colors:
+    body: '#111111'
+    name: '#1155CC'
+    headline: '#111111'
+    connections: '#111111'
+    section_titles: '#1155CC'
+    links: '#1155CC'
+  typography:
+    font_family: Source Sans 3
+    alignment: left
+    line_spacing: 0.62em
+    font_size:
+      body: 10.5pt
+      name: 24pt
+      headline: 11pt
+      connections: 10.5pt
+      section_titles: 12pt
+    small_caps:
+      section_titles: false
+    bold:
+      headline: true
+      section_titles: true
+  header:
+    alignment: center
+    space_below_name: 0.22cm
+    space_below_headline: 0.28cm
+    space_below_connections: 0.4cm
+    connections:
+      show_icons: false
+      display_urls_instead_of_usernames: true
+      phone_number_format: international
+      separator: '|'
+      space_between_connections: 0.25cm
+  links:
+    underline: false
+    show_external_link_icon: false
+  section_titles:
+    type: with_full_line
+    line_thickness: 0.5pt
+    space_above: 0.42cm
+    space_below: 0.2cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.92em
+    space_between_text_based_entries: 0.36em
+    show_time_spans_in: []
+  entries:
+    side_space: 0cm
+    date_and_location_width: 0cm
+    space_between_columns: 0cm
+    allow_page_break: false
+    highlights:
+      bullet: •
+      space_left: 0cm
+      space_above: 0.06cm
+      space_between_items: 0.04cm
+      space_between_bullet_and_text: 0.5em
+  templates:
+    experience_entry:
+      main_column: '**POSITION** — **COMPANY**
+
+        LOCATION | DATE
+
+        SUMMARY
+
+        HIGHLIGHTS'
+      date_and_location_column: ''

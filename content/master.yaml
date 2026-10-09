@@ -1,0 +1,130 @@
+# Migrated from source/original.pdf. Source claims are not independently verified.
+# All original sections are retained. See REVIEW.md before submitting any version.
+cv:
+  name: Artie Hinz
+  location: Calgary, Canada
+  phone: +1 825 734 1311
+  email: hello@artiehinz.com
+  website: https://artiehinz.com/
+  social_networks:
+  - network: LinkedIn
+    username: artie-hinz
+  - network: GitHub
+    username: artiehinz
+  sections:
+    Summary:
+    - Art Director and Senior 3D/Motion Designer with 9+ years of experience delivering 3D and motion
+      work for global brands, tech products, and cultural projects. I started as an intern in 2017 and
+      have since grown through many projects, workflows, and collaborative teams.
+    - I guide work from asset preparation through final delivery — materials, lighting, cameras, animation,
+      rendering, and compositing — using Cinema 4D (Redshift), Blender, Unreal Engine, Substance Painter,
+      DaVinci, and related tools. My approach combines clear creative direction, practical workflows, and
+      dependable delivery.
+    - I use human-led AI tools, including ComfyUI and Higgsfield, for early visual exploration and faster
+      iteration while keeping creative direction and quality decisions with the team.
+    - Selected work includes Google Chromebook, Google ARCore, Travel Alberta, and award-winning VR/live
+      productions. — [Portfolio](https://artiehinz.com/all)
+    Core Skills:
+    - 3D & Motion Design; 3D Modeling; Look Development; Compositing & VFX; Physical Simulations; Creative
+      & Technical Direction; Art Direction; Team Leadership; Show & Event Visuals; VR & Gamification;
+      Interactive Media; AI Workflows; Pipeline Development; Render Optimization;
+    Software:
+    - Cinema 4D (Redshift); Blender; ZBrush; Adobe After Effects; Premiere Pro; DaVinci Resolve; Photoshop;
+      Illustrator; Figma; Substance Painter; Octane; Cycles; EEVEE; Unreal Engine; Unity (asset prep);
+      ComfyUI; Higgsfield; Miro; Slack; Zoom; Parsec; Google Workspace; Dropbox; Google Sheets
+    Professional Experience:
+    - company: Studio Dialog
+      position: 3D Motion Designer
+      location: Calgary, Canada
+      date: Jun 2023 – Present
+      highlights:
+      - Create 3D and motion assets for Travel Alberta, Government of Alberta, and other clients.
+      - 'Own the full CG pipeline: modeling, shading, lighting, animation, rendering, compositing, and
+        delivery.'
+      - Used AI-assisted look development for style exploration and lighting or mood previews, helping
+        teams review options faster.
+      - Prepare and optimize geometry, materials, lighting, and camera setups to ensure consistent, repeatable
+        results across scenes.
+    - company: Freelance
+      position: Art Director & CG Artist
+      location: Remote
+      date: Apr 2022 – Jun 2023
+      highlights:
+      - Led art direction, styleframes, and 3D production for campaigns and product visuals for clients.
+      - 'Google ARCore and Chromebook Instore Teaser: acted as Lead Motion Designer on hero shots, responsible
+        for lookdev, lighting and animation; supported consistency across team-delivered shots.'
+      - Built practical small-team workflows using Miro for concepts, messaging for communication, and cloud
+        drives plus spreadsheets for asset tracking and feedback.
+      - Delivered complex spots on tight timelines with clear, repeatable workflows.
+    - company: Invite Agency
+      position: Art Director / CG Lead
+      location: Moscow, Russia
+      date: 2021 – 2022
+      highlights:
+      - Directed visual identity and motion systems for influencer and brand-driven campaigns.
+      - Coordinated designers and animators; assigned tasks, reviewed outputs, and maintained quality
+        across large content volumes.
+      - Developed motion guidelines and reusable elements (logo animations, transitions, lower-thirds)
+        for multi-video packages.
+    - company: Sinners Studio
+      position: Art Director & CG Generalist
+      location: Moscow, Russia
+      date: 2020 – 2021
+      highlights:
+      - Led concept and CG execution for youth-focused and social-first campaigns.
+      - Created modular motion systems and templates to ensure consistency across short-form videos and
+        series.
+      - Balanced bold visual language with efficient production practices for fast-turnaround content.
+    - company: New Cave Media, Blackbox, Art. Lebedev Studio
+      position: CG Supervisor & Motion Designer
+      location: Various locations
+      date: 2017 – 2020
+      highlights:
+      - Supervised CG for VR and interactive projects; created optimized, reusable assets for real-time
+        engines.
+      - Designed large-scale show visuals for concerts and events, including stadium shows with complex
+        playback systems.
+      - Built strong foundations in typography, layout, and systematic graphic design applied to all motion
+        work.
+    Selected Projects:
+    - bullet: '[Squid Game in Calgary](https://artiehinz.com/squid-game-in-calgary) – personal project;
+        ~150K views and strong engagement.'
+    - bullet: '[Google ARCore](https://artiehinz.com/arcore) - Commercial work developed alongside Media.Monks
+        and Superfly'
+    - bullet: '[Co-op Bubbles Campaign](https://artiehinz.com/coop-bubbles-campaign) - Commercial project
+        created with Studio Dialog'
+    - bullet: '[RIMOWA: Reflects Vibrance](https://artiehinz.com/rimowa-reflects-vibrance) – Product-style
+        visuals aligned with premium brand aesthetics.'
+    - bullet: '[Ciiiiiiiiiiigarette](https://artiehinz.com/ciiiiiiiiiiigarette) – Simulation-heavy personal
+        project(smoke, particles, rigid bodies)'
+    - bullet: '[R&D collection](https://artiehinz.com/research-development) – Experiments in shaders,
+        AI-assisted pipelines, procedural workflows, and more.'
+    AI & Pipeline Contributions:
+    - bullet: Developed AI-driven face transformation and replacement workflows integrated into compositing
+        pipelines.
+    - bullet: Explored AI-assisted techniques for accelerating visual development while preserving creative
+        control.
+    - bullet: Used camera mapping and AI-generated textures to rapidly build stylized 3D sets.
+    - bullet: Built batch-render setups and standardized scene templates to reduce manual work and ensure
+        consistent lighting and camera setups.
+    - bullet: 'Act as a bridge between creative and technical roles: documenting processes, formalizing
+        tools, and advocating automation in teams.'
+    Awards & Recognition:
+    - bullet: '[Webby Award Winner – Sotbi](https://winners.webbyawards.com/2019/websites/general-websites/law/88227/sotbi)
+        (under my gov. name Artem Yudin).'
+    - bullet: '[Behance: 3x 3D Motion and 3x After Effects Awards](https://www.behance.net/artie_hinz).'
+    - bullet: '[goEast Film Festival – Open Frame Award for “Aftermath VR”](https://medium.com/vr-film-review/open-frame-award-goeast-film-festival-2019-8710ed7300fc).'
+    - bullet: M1 Music Awards V – “Love It Rhythm” live show visuals.
+    Work Authorization & Preferences:
+    - Authorized to work in Canada. Open to relocation within Canada (Vancouver, Toronto). Open to remote
+      collaboration with international studios. Interested in roles combining hands-on 3D/motion work with
+      team leadership, R&D, and pipeline/tool development.
+    Education:
+    - bullet: Tchaikovsky National Music Academy of Ukraine — Music Performance and Music Theory
+    - bullet: Classic Private University — Business, Trade and Stock Exchange activity
+    - bullet: Transitioned into CG, engines, and programming through self-directed study and professional
+        work.
+    Languages:
+    - bullet: 'English: IELTS B2'
+    - bullet: Russian
+    - bullet: Ukrainian

@@ -1,0 +1,47 @@
+# Proposed edits, not corrections to the historical source.
+# Selections are zero-based indices into master.yaml; review when reordering the master.
+description: Proposed motion-design draft. Requires local rendering and owner approval.
+max_pages: 2
+cv_overrides:
+  headline: Senior 3D / Motion Designer | Art Director
+  social_networks: []
+  custom_connections:
+  - placeholder: LinkedIn
+    url: https://www.linkedin.com/in/artie-hinz/
+    fontawesome_icon: linkedin
+  - placeholder: GitHub
+    url: https://github.com/artiehinz
+    fontawesome_icon: github
+section_overrides:
+  Summary:
+  - Art Director and Senior 3D/Motion Designer with 9+ years of experience, growing from an internship in
+    2017 through many projects, workflows, and collaborative teams. I deliver 3D and motion work for global
+    brands, tech products, and cultural projects with clear creative direction, practical workflows, and
+    dependable delivery. I communicate clearly across creative and technical work so teams can make decisions
+    and deliver reliably. Selected work includes Google ARCore, Google Chromebook, and Travel Alberta.
+  Skills & Tools:
+  - label: 3D & rendering
+    details: Cinema 4D (C4D), Redshift, Blender, Unreal Engine
+  - label: Compositing & finishing
+    details: Adobe After Effects, DaVinci Resolve, Premiere Pro
+  - label: Specialisms
+    details: Motion graphics, dynamic camera work, visual storytelling, look development, pipeline improvement, render optimization
+  - label: AI workflows
+    details: ComfyUI, Higgsfield
+section_selections:
+  Selected Projects:
+    source: Selected Projects
+    indices:
+    - 1
+    - 2
+    - 3
+    - 0
+section_order:
+- Summary
+- Professional Experience
+- Selected Projects
+- Skills & Tools
+- Awards & Recognition
+- Education
+- Languages
+- Work Authorization & Preferences
