@@ -194,7 +194,7 @@ def prepare(variant_name: str) -> tuple[dict, Path, int]:
     payload = assemble(master, variant, style)
     out = ROOT / "out" / variant_name
     out.mkdir(parents=True, exist_ok=True)
-    path = out / "Artie_Hinz_CV.yaml"
+    path = out / "resume.yaml"
     path.write_text(yaml.safe_dump(payload, sort_keys=False, allow_unicode=True, width=100), encoding="utf-8")
     return payload, out, int(variant.get("max_pages", 2))
 
@@ -215,20 +215,20 @@ def build(variant_name: str) -> dict:
     # Build in staging: a failed render cannot overwrite the last generated PDF.
     with tempfile.TemporaryDirectory(prefix=".render-", dir=out) as temp:
         stage = Path(temp)
-        command = [executable, "render", str(out / "Artie_Hinz_CV.yaml"),
-                   "--pdf-path", str(stage / "Artie_Hinz_CV.pdf"),
-                   "--typst-path", str(stage / "Artie_Hinz_CV.typ"),
-                   "--markdown-path", str(stage / "Artie_Hinz_CV.md"),
+        command = [executable, "render", str(out / "resume.yaml"),
+                   "--pdf-path", str(stage / "resume.pdf"),
+                   "--typst-path", str(stage / "resume.typ"),
+                   "--markdown-path", str(stage / "resume.md"),
                    "--dont-generate-html", "--dont-generate-png"]
         subprocess.run(command, cwd=stage, check=True, timeout=180)
-        pdf = stage / "Artie_Hinz_CV.pdf"
+        pdf = stage / "resume.pdf"
         if not pdf.is_file():
             raise RuntimeError("RenderCV did not produce the expected PDF; inspect its validation output")
         report = inspect_pdf(pdf, payload, stage / "qa", max_pages)
         # Keep the PDF and its diagnostics even when QA fails so the failure can be inspected.
         # This is a draft build directory, never an automatic application/submission destination.
         for suffix in ("pdf", "typ", "md"):
-            item = stage / f"Artie_Hinz_CV.{suffix}"
+            item = stage / f"resume.{suffix}"
             if item.exists():
                 shutil.copy2(item, out / item.name)
         if (out / "qa").exists():
@@ -239,7 +239,7 @@ def build(variant_name: str) -> dict:
                     "inputs": input_hashes,
                     "qa_status": report["status"], "approval": "DRAFT: owner and visual approval still required"}
     (out / "build.json").write_text(json.dumps(build_record, indent=2) + "\n", encoding="utf-8")
-    print(f"PDF: {out / 'Artie_Hinz_CV.pdf'}\nQA: {out / 'qa/report.json'}")
+    print(f"PDF: {out / 'resume.pdf'}\nQA: {out / 'qa/report.json'}")
     return report
 
 
@@ -251,7 +251,7 @@ def main() -> int:
     try:
         if args.command == "prepare":
             _, out, _ = prepare(args.variant)
-            print(f"Prepared {out / 'Artie_Hinz_CV.yaml'}; no PDF rendered")
+            print(f"Prepared {out / 'resume.yaml'}; no PDF rendered")
             return 0
         if args.command == "check":
             out = ROOT / "out" / args.variant
@@ -260,7 +260,7 @@ def main() -> int:
                 raise ValueError("Invalid variant name")
             payload = load_yaml(out / "rendered-input.yaml")
             max_pages = int(load_yaml(ROOT / f"variants/{args.variant}.yaml").get("max_pages", 2))
-            report = inspect_pdf(out / "Artie_Hinz_CV.pdf", payload, out / "qa", max_pages)
+            report = inspect_pdf(out / "resume.pdf", payload, out / "qa", max_pages)
         elif args.command == "build":
             report = build(args.variant)
         else:

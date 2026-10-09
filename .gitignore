@@ -2,16 +2,12 @@
 old_cv/*
 !old_cv/README.md
 
-# Local testing data.
-old_cv/Artie_Hinz_Senior-3D_Motion Designer_CV.pdf
-
 # Retained local starter duplicate; the root project is the maintained copy.
-Artie_Hinz_Local_CV_Starter/
+*_Local_CV_Starter/
 
-# Private evidence preserved from the starter CV; keep it local, including the
-# retained unpacked starter copy.
-**/source/original.pdf
-**/source/original.txt
+# Local source evidence; retain only the template instructions in Git.
+source/*
+!source/README.md
 
 # Local environments and generated build output.
 .venv/

@@ -1,14 +1,15 @@
-# Full-content rendering; preserves original section sequence.
-description: Full source inventory. Not the submission-length target.
+# Full editable inventory for review and source-of-truth maintenance.
+description: Full generic template inventory. Not the submission-length target.
 max_pages: 4
+cv_overrides:
+  headline: Your Professional Headline
 section_order:
 - Summary
 - Core Skills
-- Software
 - Professional Experience
 - Selected Projects
-- AI & Pipeline Contributions
+- Tools & Workflows
 - Awards & Recognition
-- Work Authorization & Preferences
+- Work Preferences
 - Education
 - Languages

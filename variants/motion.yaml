@@ -1,47 +1,37 @@
-# Proposed edits, not corrections to the historical source.
-# Selections are zero-based indices into master.yaml; review when reordering the master.
-description: Proposed motion-design draft. Requires local rendering and owner approval.
+# Focused two-page example. Replace all placeholders with owner-confirmed content.
+description: Focused generic resume example. Requires local rendering and owner approval.
 max_pages: 2
 cv_overrides:
-  headline: Senior 3D / Motion Designer | Art Director
+  headline: Your Professional Headline
   social_networks: []
   custom_connections:
   - placeholder: LinkedIn
-    url: https://www.linkedin.com/in/artie-hinz/
+    url: https://www.linkedin.com/in/your-profile
     fontawesome_icon: linkedin
   - placeholder: GitHub
-    url: https://github.com/artiehinz
+    url: https://github.com/your-handle
     fontawesome_icon: github
 section_overrides:
   Summary:
-  - Art Director and Senior 3D/Motion Designer with 9+ years of experience, growing from an internship in
-    2017 through many projects, workflows, and collaborative teams. I deliver 3D and motion work for global
-    brands, tech products, and cultural projects with clear creative direction, practical workflows, and
-    dependable delivery. I communicate clearly across creative and technical work so teams can make decisions
-    and deliver reliably. Selected work includes Google ARCore, Google Chromebook, and Travel Alberta.
+  - Add a focused, owner-approved summary that explains your role, strengths, collaboration style, and intended direction.
   Skills & Tools:
-  - label: 3D & rendering
-    details: Cinema 4D (C4D), Redshift, Blender, Unreal Engine
-  - label: Compositing & finishing
-    details: Adobe After Effects, DaVinci Resolve, Premiere Pro
-  - label: Specialisms
-    details: Motion graphics, dynamic camera work, visual storytelling, look development, pipeline improvement, render optimization
-  - label: AI workflows
-    details: ComfyUI, Higgsfield
+  - label: Core strengths
+    details: Add owner-confirmed strengths relevant to the target role
+  - label: Delivery
+    details: Add practical workflow, collaboration, and quality practices
+  - label: Tools
+    details: Add owner-confirmed tools only
 section_selections:
   Selected Projects:
     source: Selected Projects
     indices:
-    - 1
-    - 2
-    - 3
     - 0
+    - 1
 section_order:
 - Summary
 - Professional Experience
 - Selected Projects
 - Skills & Tools
-- Awards & Recognition
 - Education
 - Languages
-- Work Authorization & Preferences
+- Work Preferences

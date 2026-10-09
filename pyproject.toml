@@ -1,7 +1,7 @@
 [project]
-name = "artie-cv-local"
+name = "resume-template-local"
 version = "0.1.0"
-description = "Local, Codex-editable CV sources and PDF checks"
+description = "Local, Codex-editable resume template and PDF checks"
 requires-python = ">=3.12"
 dependencies = [
   "rendercv[full]==2.8",
