@@ -2,12 +2,18 @@
 
 Copy this prompt to start with Codex:
 
-```sh
+```text
 git clone https://github.com/artiehinz/ats-cv.git
 cd ats-cv
 # For an existing local copy instead: git pull --ff-only
 
-Read `AGENTS.md`, `REVIEW.md`, and `.agents/skills/rebuild-cv/SKILL.md` first. Run `uv sync`, `uv run python -m unittest discover -s tests -v`, `uv run python scripts/cv.py build --variant motion`, and `uv run python scripts/cv.py build --variant master`. Inspect every QA PNG plus `report.json`, `extracted.txt`, and `extracted-layout.txt`. I will provide and confirm facts, and approve changes. Use local source evidence only; never invent facts. Use variants for tailoring, preserve private inputs, and do not publish or submit anything without my explicit permission. Treat `source/` and `old_cv/` as local private inputs: keep their contents out of Git except their README files.
+Read `AGENTS.md`, `REVIEW.md`, and `.agents/skills/rebuild-cv/SKILL.md` first.
+
+1. Find my original CV under `source/` or `old_cv/` and preserve it unchanged. Before editing tracked YAML with personal information, confirm I am working in a dedicated private clone/repository or an ignored private project.
+2. Ask for the target role, work preferences, and any missing factual clarifications. Treat the original CV as evidence: replace placeholders with a complete verified inventory, keep unresolved facts in `REVIEW.md`, and never infer dates, degrees, metrics, credentials, or tools.
+3. Keep a full master inventory and create a focused variant for the target role. Do not hide keywords or content.
+4. Run `uv sync --locked`, the unit tests, and builds for both `motion` and `master`. Inspect every QA PNG, `report.json`, `extracted.txt`, and `extracted-layout.txt`; use an independent reader when available. Verify links, visible URL text, and name/headline/contact reading order.
+5. Return the PDF paths and unresolved questions. Do not upload, publish, share, or submit any document or source material without my explicit permission.
 ```
 
 # Convert an old CV into an ATS-friendly resume with Codex
@@ -33,25 +39,52 @@ Those directories are local input only and ignored by Git (apart from their
 README files). Do not publish, submit, or upload source material without the
 owner’s explicit permission.
 
+Ignoring inputs and `out/` does not make tracked YAML private. Before replacing
+the generic placeholders in `content/`, `variants/`, or `REVIEW.md` with a real
+person's information, work in a dedicated private clone/repository or a separate
+ignored private project. `.gitignore` cannot untrack files that Git already
+knows about. Check `git status` and the staged diff before sharing a repository.
+
 ## Setup and validation
 
 Python 3.12+ and uv are required. The pinned dependencies are recorded in
 `pyproject.toml` and `uv.lock`.
 
 ```sh
-uv sync
+uv sync --locked
 uv run python -m unittest discover -s tests -v
 uv run python scripts/cv.py build --variant motion
 uv run python scripts/cv.py build --variant master
 ```
 
+On Windows PowerShell, use the same commands with
+`$env:PYTHONUTF8='1'` set for the session. If the `uv` command is not on PATH,
+use `python -m uv sync --locked` and replace `uv run` with `python -m uv run`.
+This does not install anything globally.
+
 Each build writes `resume.pdf`, `resume.md`, `resume.typ`, the prepared YAML,
 and QA artifacts under `out/<variant>/`. Inspect every page PNG and read the
 QA report plus both extraction outputs before using a document.
 
+`out/personal/` is only an optional custom local convention; it is not produced
+by this generic template. Public template builds remain under `out/<variant>/`.
+
 The local validation workflow has been executed for this template, but every
 build remains a draft: tests and QA do not verify facts, guarantee ATS
 interpretation, or approve a resume for submission.
+
+For an optional independent text-reader check, install `pdfminer.six` in your
+own environment if it is not already available, then run:
+
+```sh
+python -c "from pdfminer.high_level import extract_text; print(extract_text('out/motion/resume.pdf'))"
+```
+
+Compare the name, headline, contact order, visible URLs, employer/date grouping,
+and links against the PDF. The built-in native and layout extraction files are
+two views from the same MuPDF-based checker; Poppler or PDFMiner is an
+independent reader when locally available. Neither is a commercial ATS test or
+a job-match assessment.
 
 ## Where to edit
 

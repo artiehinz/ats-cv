@@ -14,6 +14,11 @@ submit, upload, or expose source resumes without explicit owner permission.
   employers, credentials, metrics, tools, proficiency, or work authorization.
 - Keep local originals in `source/` or `old_cv/`; they are private input and
   ignored by Git. Do not edit or commit them.
+- Before replacing tracked placeholder YAML with personal content, use a
+  dedicated private clone/repository or an ignored private project. Ignored
+  inputs do not protect personalized `content/`, `variants/`, or `REVIEW.md`
+  once those tracked files are changed. Inspect `git status` and the staged
+  diff before sharing anything.
 - Keep all rendered content visible: no hidden keywords, tiny text, or
   off-page content.
 

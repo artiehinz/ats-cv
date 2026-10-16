@@ -34,7 +34,14 @@ class ProjectTests(unittest.TestCase):
         self.assertEqual(list(sections)[:2], ["Summary", "Professional Experience"])
         self.assertEqual(len(sections["Selected Projects"]), 2)
         self.assertEqual(payload["cv"]["social_networks"], [])
-        self.assertEqual([item["placeholder"] for item in payload["cv"]["custom_connections"]], ["LinkedIn", "GitHub"])
+        self.assertEqual(
+            [item["placeholder"] for item in payload["cv"]["custom_connections"]],
+            ["linkedin.com/in/your-profile", "github.com/your-handle"],
+        )
+        self.assertEqual(
+            [item["url"] for item in payload["cv"]["custom_connections"]],
+            ["https://www.linkedin.com/in/your-profile", "https://github.com/your-handle"],
+        )
 
     def test_invalid_selection_rejected(self):
         self.variant["section_selections"]["Selected Projects"]["indices"] = [-1]

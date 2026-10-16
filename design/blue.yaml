@@ -5,7 +5,7 @@ design:
   page:
     size: us-letter
     top_margin: 0.6in
-    bottom_margin: 0.7in
+    bottom_margin: 0.6in
     left_margin: 0.72in
     right_margin: 0.72in
     show_footer: false
@@ -20,7 +20,7 @@ design:
   typography:
     font_family: Source Sans 3
     alignment: left
-    line_spacing: 0.62em
+    line_spacing: 0.60em
     font_size:
       body: 10.5pt
       name: 24pt
@@ -33,7 +33,7 @@ design:
       headline: true
       section_titles: true
   header:
-    alignment: center
+    alignment: left
     space_below_name: 0.22cm
     space_below_headline: 0.28cm
     space_below_connections: 0.4cm
@@ -53,7 +53,7 @@ design:
     space_below: 0.2cm
   sections:
     allow_page_break: true
-    space_between_regular_entries: 0.92em
+    space_between_regular_entries: 0.75em
     space_between_text_based_entries: 0.36em
     show_time_spans_in: []
   entries:

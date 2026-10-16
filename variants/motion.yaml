@@ -5,10 +5,10 @@ cv_overrides:
   headline: Your Professional Headline
   social_networks: []
   custom_connections:
-  - placeholder: LinkedIn
+  - placeholder: linkedin.com/in/your-profile
     url: https://www.linkedin.com/in/your-profile
     fontawesome_icon: linkedin
-  - placeholder: GitHub
+  - placeholder: github.com/your-handle
     url: https://github.com/your-handle
     fontawesome_icon: github
 section_overrides:
