@@ -12,8 +12,8 @@ uv run python scripts/cv.py build --variant master
 The unit tests cover generic composition, selection validation, and
 invisible-character rejection. They do not render a PDF or validate a commercial
 ATS interpretation. A build validates the prepared input with the pinned
-renderer and writes a PDF, extracted text, report, and page PNGs to
-`out/<variant>/qa/`.
+renderer and writes the PDF to `out/<variant>/resume.pdf`; extracted text,
+the report, and page PNGs are written to `out/<variant>/qa/`.
 
 Inspect every PNG and read `report.json`, `extracted.txt`, and
 `extracted-layout.txt`. Confirm name/headline/contact reading order, exact

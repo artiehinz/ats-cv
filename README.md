@@ -41,8 +41,8 @@ owner’s explicit permission.
 
 Ignoring inputs and `out/` does not make tracked YAML private. Before replacing
 the generic placeholders in `content/`, `variants/`, or `REVIEW.md` with a real
-person's information, work in a dedicated private clone/repository or a separate
-ignored private project. `.gitignore` cannot untrack files that Git already
+person's information, work in a private repository or a separate ignored local
+project. `.gitignore` cannot untrack files that Git already
 knows about. Check `git status` and the staged diff before sharing a repository.
 
 ## Setup and validation
@@ -62,9 +62,10 @@ On Windows PowerShell, use the same commands with
 use `python -m uv sync --locked` and replace `uv run` with `python -m uv run`.
 This does not install anything globally.
 
-Each build writes `resume.pdf`, `resume.md`, `resume.typ`, the prepared YAML,
-and QA artifacts under `out/<variant>/`. Inspect every page PNG and read the
-QA report plus both extraction outputs before using a document.
+Each build writes `resume.pdf`, `resume.md`, `resume.typ`, and prepared YAML to
+`out/<variant>/`, with QA artifacts under `out/<variant>/qa/`. Inspect every
+page PNG and read the QA report plus both extraction outputs before using a
+document.
 
 `out/personal/` is only an optional custom local convention; it is not produced
 by this generic template. Public template builds remain under `out/<variant>/`.
